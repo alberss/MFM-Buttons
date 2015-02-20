@@ -21,18 +21,63 @@ body{
     min-height: 100vh;
     text-align: center;
 }
-a.btn{
+a.btn {
     width: 200px;
     margin: auto;
     padding: 20px 0;
     text-transform: uppercase;
     font-size: 1.2em;
     cursor: pointer;
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+a.btn::after, a.btn::before{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 /*=============================================
     BUTTON 1
 =============================================*/
 a.btn1{
-    background: white;
+    background: transparent;
+    color: white;
     border-bottom: 2px solid white;
+    transform-origin: left;
+}
+a.btn1::after {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: transparent;
+    z-index: 1;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    transform-origin: bottom right;
+}
+a.btn1:hover::after{
+    transform: rotateY(-90deg);
+}
+a.btn1::before {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: transparent;
+    z-index: 1;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform-origin: top left;
+}
+a.btn1:hover::before{
+    transform: rotateY(90deg);
 }
