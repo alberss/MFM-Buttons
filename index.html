@@ -4,20 +4,36 @@
         <title>MFM Buttons</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700,900,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <!-- CSS'S -->
         <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- JS'S -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
-    <body>
-        <div class="flex-container">
-            <section style="background: #FA8072;">
-                <a class="btn btn1">Botón</a>
+    <body data-index="0">
+        <div id="flex-container">
+            <section id="intro" style="background: linear-gradient(#F08080, #FA8072);">
+                <h1><i>M</i><i>a</i><i>r</i><i>c</i> <i>F</i><i>.</i> <i>M</i><i>o</i><i>n</i><i>t</i><i>e</i><i>n</i><i>e</i><i>g</i><i>r</i><i>o</i><i>'</i><i>s</i> <br/><i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i><i>s</i></h1>
             </section>
-            <section style="background: #E9967A;">
+            <section id="button1" style="background: linear-gradient(#FA8072,#E9967A);">
+                <a class="btn btn1">Button</a>
+            </section>
+            <section id="button2" style="background: linear-gradient(#E9967A,#FFA07A);">
                 <a class="btn">Botón</a>
             </section>
-            <section style="background: #FFA07A;">
+            <section id="button2" style="background: #FFA07A;">
                 <a class="btn">Botón</a>
             </section>
         </div>
+        <script src="script.js"></script>
     </body>
+    <nav>
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
 </html>
